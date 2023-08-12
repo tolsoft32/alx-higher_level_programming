@@ -3,12 +3,12 @@
 if __name__ == "__main__":
     import sys
 
-    counta = len(sys.argv) - 1
-    if counta == 0:
+    count = len(sys.argv) - 1
+    if count == 0:
         print("0 argument.")
-    elif counta == 1:
+    elif count == 1:
         print("1 argument:")
     else:
-        print("{:d} arguments:".format(counta))
-    for i in range(counta):
+        print("{:d} arguments:".format(count))
+    for i in range(count):
         print("{:d}: {}".format(i + 1, sys.argv[i + 1]))

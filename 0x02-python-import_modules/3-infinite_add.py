@@ -1,15 +1,14 @@
 #!/usr/bin/python3
 
-from sys import argv
-
-def add_all_arg():
-    argc = len(argv)
-    j = 1
-    sum = 0
-    while j < argc:
-        sum += int(argv[j])
-        j += 1
-    print("{:d}".format(sum))
+import sys
 
 if __name__ == "__main__":
-    add_all_arg()
+    agv = sys.argv
+    l_agv = len(agv)
+    sum = 0
+
+    if l_agv > 1:
+        for i in range(1, l_agv):
+            sum += int(agv[i])
+
+        print(sum)
